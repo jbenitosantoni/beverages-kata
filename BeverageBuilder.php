@@ -25,6 +25,11 @@ final class BeverageBuilder
         $this->product->price += 0.15;
     }
 
+    public function addCinnamon(): void
+    {
+        $this->product->price += 0.05;
+    }
+
     public function getBeverage(): AbstractBeverage
     {
         return $this->product;
